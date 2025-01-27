@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    padding-top: 4rem;
+}
+
+/* 
+    FORM CALENDAR
+*/
+
+.react-calendar {
+    min-width: 70%;
+    border: none;
+    font-family: Arial, sans-serif;
+  }
+  
+  .react-calendar__navigation button {
+    color: #4a90e2;
+    font-weight: bold;
+  }
+  
+  .react-calendar__tile {
+    background: white;
+    color: #333;
+    border-radius: 6px;
+    transition: all 0.3s;
+  }
+  
+  .react-calendar__tile:enabled:hover {
+    background: #f0f8ff;
+  }
+  
+  .react-calendar__tile--active {
+    background: #4a90e2 !important;
+    color: white !important;
+  }
+  
+  .highlighted-date {
+    background: #4a90e2 !important;
+    color: white !important;
+    border-radius: 6px;
+  }
+  
