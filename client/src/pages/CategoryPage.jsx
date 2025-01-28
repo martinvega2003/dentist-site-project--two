@@ -83,7 +83,7 @@ const CategoryPage = ({ category, services }) => {
         <div className="w-full flex flex-col md:flex-row justify-start items-center md:items-start gap-12">
           {
             category.doctors.map(doctor => (
-              <div className="relative z-10 bg-neutralLight w-80 h-[430px] flex flex-col justify-start items-start border-2 border-neutralDark overflow-hidden">
+              <div className="relative z-10 bg-neutralLight w-[90%] sm:w-80 h-fit sm:h-[430px] flex flex-col justify-start items-start border-2 border-neutralDark overflow-hidden">
                 <img src={doctor.image} alt="Image of the doctor" className='w-full h-auto' />
 
                 <div className="w-full p-4 flex flex-col justify-start items-start">
@@ -157,7 +157,7 @@ const CategoryPage = ({ category, services }) => {
         </div>
       ))}
 
-      {/* SIXTH SECTION - Call to Action */}
+      {/* FIFTH SECTION - Call to Action */}
       <div className="w-full flex flex-col items-center text-center mt-12 mb-6 px-4">
         <h2 className="text-3xl font-bold text-primary mb-6">
           Ready to Transform Your Smile?
@@ -170,15 +170,15 @@ const CategoryPage = ({ category, services }) => {
         <div className="flex flex-wrap justify-center items-center gap-4 mb-8 max-w-[90%]">
           <div className="flex items-center text-primary w-full sm:w-auto">
             <MdHealthAndSafety size={24} className="mr-2" />
-            <span>Comprehensive Insurance Coverage</span>
+            <span className='text-left'>Comprehensive Insurance Coverage</span>
           </div>
           <div className="flex items-center text-primary w-full sm:w-auto">
             <MdVerified size={24} className="mr-2" />
-            <span>Warranty on Procedures</span>
+            <span className='text-left'>Warranty on Procedures</span>
           </div>
           <div className="flex items-center text-primary w-full sm:w-auto">
             <MdCardGiftcard size={24} className="mr-2" />
-            <span>6-Month Teeth Whitening Gift</span>
+            <span className='text-left'>6-Month Teeth Whitening Gift</span>
           </div>
         </div>
 
