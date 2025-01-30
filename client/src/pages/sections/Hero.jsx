@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 import image from "../../images/hero-bg.webp"
 import { Link } from "react-router-dom";
 
-const Hero = ({bgImage, heading, subheading}) => {
+const Hero = ({ bgImage, heading, subheading, }) => {
   const [typedText, setTypedText] = useState(""); // Track the typing progress
   const fullText = heading; // Full text to animate
 
@@ -28,7 +28,7 @@ const Hero = ({bgImage, heading, subheading}) => {
       className="relative w-full h-screen bg-cover bg-center"
       style={{ 
         backgroundImage: `url(${bgImage || image})`,
-        backgroundPosition: "center right", // Default position for larger screens
+        backgroundPosition: "center", // Default position for larger screens
         backgroundSize: "cover", // Ensure the image covers the entire section 
     }}
     >

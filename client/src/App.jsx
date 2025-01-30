@@ -6,6 +6,7 @@ import { servicesData } from './data/servicesData'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+import BlogPlaceholder from './components/BlogPlaceholder'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/booking' element={<BookingPage />} />
+        <Route path='/blog-placeholder' element={<BlogPlaceholder />} />
         {
           servicesData.map(category => {
             return (

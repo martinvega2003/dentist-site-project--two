@@ -3,6 +3,7 @@ import mainArticleImg from "../../images/main-article-thumbnail.webp"
 import articleImgOne from "../../images/article-thumbnail-1.jpg"
 import articleImgTwo from "../../images/article-thumbnail-2.jpg"
 import articleImgThree from "../../images/article-thumbnail-3.webp"
+import { Link } from "react-router-dom";
 
 const BlogSection = () => {
   return (
@@ -19,7 +20,7 @@ const BlogSection = () => {
       {/* Blog Content */}
       <div className="flex flex-col justify-start items-center gap-10">
         {/* Main Article */}
-        <div className="w-full">
+        <Link className="w-full" to="/blog-placeholder">
           <div className="relative overflow-hidden rounded-lg shadow-md">
             <img
               src={mainArticleImg}
@@ -36,7 +37,7 @@ const BlogSection = () => {
               </p>
             </div>
           </div>
-        </div>
+        </Link>
 
         {/* Other Articles */}
         <div className="w-full h-fit flex flex-col-reverse lg:flex-row justify-center items-center">
@@ -48,14 +49,17 @@ const BlogSection = () => {
 							Read our articles and learn from Professional advice how to take regular care of your teeth and have the most beautiful smile
 						</p>
 						<button className="py-2 px-8 bg-primary border-primary rounded-md border-2 text-neutralLight hover:bg-neutralLight hover:text-primary transition duration-300">
-							See Articles
+							<Link to="/blog-placeholder">
+                See Articles
+              </Link>
 						</button>
 					</div>
 
 					<div className="flex flex-col sm:flex-row justify-center items-center gap-4">
 						{/* Article Cards */}
 						{[1, 2, 3].map((_, index) => (
-							<div
+							<Link
+                to="/blog-placeholder"
 								key={index}
 								className="w-full sm:w-52 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition duration-300"
 							>
@@ -73,7 +77,7 @@ const BlogSection = () => {
 										provide insight into the topic.
 									</p>
 								</div>
-							</div>
+							</Link>
 						))}
 					</div>
 				</div>
