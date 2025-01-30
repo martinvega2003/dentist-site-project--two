@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
-import image from "../../images/hero-bg.jpeg"
+import image from "../../images/hero-bg.webp"
 import { Link } from "react-router-dom";
 
 const Hero = ({bgImage, heading, subheading}) => {
@@ -27,13 +27,13 @@ const Hero = ({bgImage, heading, subheading}) => {
     <section
       className="relative w-full h-screen bg-cover bg-center"
       style={{ 
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `url(${bgImage || image})`,
         backgroundPosition: "center right", // Default position for larger screens
         backgroundSize: "cover", // Ensure the image covers the entire section 
     }}
     >
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-neutralDark bg-opacity-50"></div>
+      <div className="absolute inset-0 bg-neutralDark bg-opacity-70"></div>
 
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center items-center lg:items-start px-8 md:px-20 text-neutralLight h-full lg:max-w-[60%]">

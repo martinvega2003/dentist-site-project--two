@@ -6,7 +6,7 @@ import Testimonials from './sections/Testimonials'
 import Contact from './sections/Contact'
 import BlogSection from './sections/BlogSection'
 import FAQSection from './sections/FAQSection'
-import bgImage from "../images/hero-bg.jpeg"
+import bgImage from "../images/hero-bg.webp"
 import PartnersSection from './sections/PartnersSection'
 
 export const MainPage = () => {

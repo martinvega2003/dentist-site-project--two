@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaPlus, FaMinus } from 'react-icons/fa';
-import insuranceImg from "../images/about-img-one.jpeg"
 import Hero from './sections/Hero';
-import heroImage from "../images/service-page-img-one.jpeg"
+import heroImage from "../images/hero-bg-service-page.webp"
 import Testimonials from './sections/Testimonials';
 import ContactSection from './sections/Contact';
 import BlogSection from './sections/BlogSection';

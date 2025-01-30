@@ -218,13 +218,13 @@ export const BookingPage = () => {
         <div className="flex justify-between mt-6">
           <button
             onClick={() => setCurrentStep(1)}
-            className="bg-gray-400 text-white px-6 py-3 rounded hover:bg-gray-500"
+            className="bg-gray-400 text-white px-6 py-3 rounded hover:bg-gray-500 text-[10px] sm:text-base"
           >
             Back
           </button>
           <button
             onClick={handleSubmit}
-            className="bg-primary text-white px-6 py-3 rounded hover:bg-blue-600"
+            className="bg-primary text-white px-6 py-3 rounded hover:bg-blue-600 text-[10px] sm:text-base"
           >
             Complete Booking
           </button>
