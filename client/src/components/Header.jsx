@@ -17,9 +17,9 @@ const Header = () => {
         <div className="hidden md:flex items-center space-x-8">
           <nav className="flex items-center space-x-6">
             <Link to="/" className="text-neutralLight hover:text-accent transition duration-300">Home</Link>
-            <Link to="/services" className="text-neutralLight hover:text-accent transition duration-300">Services</Link>
-            <Link to="/about" className="text-neutralLight hover:text-accent transition duration-300">About</Link>
-            <Link to="/contact" className="text-neutralLight hover:text-accent transition duration-300">Contact</Link>
+            <a href="#services" className="text-neutralLight hover:text-accent transition duration-300">Services</a>
+            <a href="#about" className="text-neutralLight hover:text-accent transition duration-300">About</a>
+            <a href="#contact" className="text-neutralLight hover:text-accent transition duration-300">Contact</a>
           </nav>
           <Link
             to="/booking/"

@@ -31,7 +31,7 @@ const CategoryPage = ({ category, services }) => {
       <PartnersSection />
 
       {/* SECOND  SECTION - Insurance, Benefits, and Warranty Card */}
-      <div className="py-24 flex justify-center items-center bg-neutralLight">
+      <div id='about' className="py-24 flex justify-center items-center bg-neutralLight">
         <div className="w-[80%] h-fit flex flex-col lg:flex-row justify-between items-center lg:items-start p-8 shadow-lg mb-12 border-primary border-4 rounded-tl-[50px] rounded-br-[50px] overflow-hidden">
           {/* Text Section */}
           <div className="w-full lg:w-1/2 text-neutralDark lg:mr-8">
@@ -98,7 +98,7 @@ const CategoryPage = ({ category, services }) => {
 
       {/* FOURTH SECTION - Service Details */}
       {services.map((service, index) => (
-        <div key={index}>
+        <div id='services' key={index}>
           {/* Service Title and Description */}
           <div className="relative py-12 px-8 md:px-0">
             {/* Background Image */}

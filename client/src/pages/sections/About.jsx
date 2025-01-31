@@ -6,6 +6,7 @@ import image from "../../images/about-img.webp";
 const About = () => {
   return (
     <motion.section
+      id="about"
       className="flex flex-col md:flex-row items-center md:items-start gap-12 px-8 md:px-20 py-16 bg-gradient-to-br from-white via-neutralLight to-blue-300 font-body"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

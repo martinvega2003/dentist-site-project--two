@@ -14,7 +14,7 @@ const ContactSection = () => {
   });
 
   return (
-    <section className="bg-neutralDark py-16 px-8">
+    <section id='contact' className="bg-neutralDark py-16 px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 
         {/* Contact Form and Information */}
